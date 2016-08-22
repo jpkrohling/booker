@@ -15,6 +15,7 @@
   <properties>
     <version.wildfly-swarm>1.0.0.CR2</version.wildfly-swarm>
     <version.openshift.client>3.0.1.Final</version.openshift.client>
+    <version.brave>3.9.1</version.brave>
 
     <maven.min.version>3.2.1</maven.min.version>
 
@@ -132,6 +133,33 @@
         <groupId>com.openshift</groupId>
         <artifactId>openshift-restclient-java</artifactId>
         <version>${version.openshift.client}</version>
+      </dependency>
+
+      <!-- Zipkin-related dependencies -->
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-http</artifactId>
+        <version>${version.brave}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-web-servlet-filter</artifactId>
+        <version>${version.brave}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-apache-http-interceptors</artifactId>
+        <version>${version.brave}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-spancollector-http</artifactId>
+        <version>${version.brave}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.zipkin.brave</groupId>
+        <artifactId>brave-jaxrs2</artifactId>
+        <version>${version.brave}</version>
       </dependency>
     </dependencies>
 

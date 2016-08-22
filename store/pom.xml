@@ -69,8 +69,17 @@
       <artifactId>jaxrs-cdi</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.wildfly.swarm</groupId>
+      <artifactId>jaxrs-api</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.wildfly.swarm.booker</groupId>
       <artifactId>booker-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>io.zipkin.brave</groupId>
+      <artifactId>brave-jaxrs2</artifactId>
     </dependency>
   </dependencies>
 
